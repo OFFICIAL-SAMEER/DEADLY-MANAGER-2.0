@@ -98,7 +98,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-`𝙷𝙸, 𝙸 𝙰𝙼` [𝙳𝙴𝙰𝙳𝙻𝚈 𝙱𝙾𝚃❤️](https://telegra.ph/file/52a4f3628ea7975119b5c.jpg)
+`𝙷𝙸, 𝙸 𝙰𝙼` [𝙳𝙴𝙰𝙳𝙻𝚈 𝙱𝙾𝚃❤️](https://telegra.ph/file/f0d3a4c45e9d8f8b4ba7a.jpg)
 `𝙸 𝙰𝙼 𝙷𝙴𝚁𝙴 𝚃𝙾 𝙼𝙰𝙽𝙰𝙶𝙴 𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙿𝙴𝚁𝙵𝙴𝙲𝚃𝙻𝚈..`"""
 
 
