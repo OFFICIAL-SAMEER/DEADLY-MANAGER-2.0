@@ -83,12 +83,12 @@ I am an anime Themed Group Managing Bot and I will help in managing your group\n
 buttons = [
     [
         InlineKeyboardButton(
-            text="🌹 𝙰𝙳𝙳 ᴅᴇᴀᴅʟʏ 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 🌹", url="t.me/ShasaBot_manager_bot?startgroup=true"),
+            text="🌹 𝙰𝙳𝙳 𝙳𝙴𝙰𝙳𝙻𝚈 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 🌹", url="t.me/DEADLY_manager_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="💞𝙸𝙽𝙵𝙾💞", callback_data="shasa_"),
         InlineKeyboardButton(
-            text="💖𝚂𝚄𝙿𝙿𝙾𝚁𝚃💖", url=f"https://t.me/ShasaBot_manager_support"
+            text="💖𝚂𝚄𝙿𝙿𝙾𝚁𝚃💖", url=f"https://t.me/DEADLY_manager_support"
         ),           
     ],
     [
@@ -359,7 +359,7 @@ def shasa_about_callback(update, context):
              ❍ 𝙸 𝙲𝙰𝙽 𝚆𝙰𝚁𝙽 𝚄𝚂𝙴𝚁𝚂 𝚄𝙽𝚃𝙸𝙻 𝚃𝙷𝙴𝚈 𝚁𝙴𝙰𝙲𝙷 𝙼𝙰𝚇 𝚆𝙰𝚁𝙽𝚂 𝙻𝙸𝙼𝙸𝚃.
              ❍ 𝙸 𝙷𝙰𝚅𝙰 𝙰 𝙽𝙾𝚃𝙴 𝙺𝙴𝙴𝙿𝙸𝙽𝙶 𝚂𝚈𝚂𝚃𝙴𝙼.
              
-              𝙸𝙵 𝚈𝙾𝚄 𝙷𝙰𝚅𝙴 𝙰𝙽𝚈 𝚀𝚄𝙴𝚂𝚃𝙸𝙾𝙽 𝙰𝙱𝙾𝚄𝚃 𝙳𝙴𝙰𝙳𝙻𝚈 𝙱𝙾𝚃 𝙻𝙴𝚃 𝚄𝚂 𝙺𝙽𝙾𝚆 𝙰𝚃[𝚂𝚄𝙿𝙿𝙾𝚁𝚃](https://t.me/DEADLY_manager_SUPPORT).""",
+              𝙸𝙵 𝚈𝙾𝚄 𝙷𝙰𝚅𝙴 𝙰𝙽𝚈 𝚀𝚄𝙴𝚂𝚃𝙸𝙾𝙽 𝙰𝙱𝙾𝚄𝚃 𝙳𝙴𝙰𝙳𝙻𝚈 𝙱𝙾𝚃 𝙻𝙴𝚃 𝚄𝚂 𝙺𝙽𝙾𝚆 𝙰𝚃 [𝚂𝚄𝙿𝙿𝙾𝚁𝚃](https://t.me/DEADLY_manager_SUPPORT).""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -716,7 +716,7 @@ def main():
     dispatcher.add_handler(donate_handler)
 
     dispatcher.add_error_handler(error_callback)
-
+            
     if WEBHOOK:
         LOGGER.info("Using webhooks.")
         updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TOKEN)
