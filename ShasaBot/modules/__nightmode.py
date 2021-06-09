@@ -20,9 +20,9 @@ import dateparser
 from telethon import *
 from telethon.tl.types import ChatBannedRights
 
-from deadly.events import register
-from deadly.mongo import db
-from deadly import telethn as tbot
+from ShasaBot.events import register
+from ShasaBot.mongo import db
+from ShasaBot import telethn as tbot
 
 nightmod = db.nightmode
 

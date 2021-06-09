@@ -12,9 +12,9 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from deadly import DRAGONS as SUDO_USERS
-from deadly import pbot
-from deadly.modules.sql_extended import forceSubscribe_sql as sql
+from ShasaBot import DRAGONS as SUDO_USERS
+from ShasaBot import pbot
+from ShasaBot.modules.sql_extended import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 

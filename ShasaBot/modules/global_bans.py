@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import deadly.modules.sql.global_bans_sql as sql
-from deadly.modules.sql.users_sql import get_user_com_chats
-from deadly import (
+import ShasaBot.modules.sql.global_bans_sql as sql
+from ShasaBot.modules.sql.users_sql import get_user_com_chats
+from ShasaBot import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -30,16 +30,16 @@ from deadly import (
     sw,
     dispatcher,
 )
-from deadly.modules.helper_funcs.chat_status import (
+from ShasaBot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from deadly.modules.helper_funcs.extraction import (
+from ShasaBot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from deadly.modules.helper_funcs.misc import send_to_list
+from ShasaBot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 

@@ -1,12 +1,12 @@
-from deadly import dispatcher
-from deadly.modules.helper_funcs.chat_status import (
+from ShasaBot import dispatcher
+from ShasaBot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_bot_admin,
     is_user_ban_protected,
     is_user_in_chat,
 )
-from deadly.modules.helper_funcs.extraction import extract_user_and_text
-from deadly.modules.helper_funcs.filters import CustomFilters
+from ShasaBot.modules.helper_funcs.extraction import extract_user_and_text
+from ShasaBot.modules.helper_funcs.filters import CustomFilters
 from telegram import Update, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async

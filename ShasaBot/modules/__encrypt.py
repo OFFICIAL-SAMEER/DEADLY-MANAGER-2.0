@@ -1,6 +1,6 @@
-from deadly import telethn as tbot
+from ShasaBot import telethn as tbot
 import os
-from deadly.events import register
+from ShasaBot.events import register
 import secureme
 
 @register(pattern="^/encrypt ?(.*)")

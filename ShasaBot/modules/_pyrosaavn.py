@@ -5,8 +5,8 @@ import requests
 import wget
 from pyrogram import filters
 
-from deadly import pbot as Jebot
-from deadly.pyrogramee.dark import get_arg
+from ShasaBot import pbot as Jebot
+from ShasaBot.pyrogramee.dark import get_arg
 
 
 @Jebot.on_message(filters.command("saavn"))

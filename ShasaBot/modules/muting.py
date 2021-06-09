@@ -1,20 +1,20 @@
 import html
 from typing import Optional
 
-from deadly import LOGGER, TIGERS, dispatcher
-from deadly.modules.helper_funcs.chat_status import (
+from ShasaBot import LOGGER, TIGERS, dispatcher
+from ShasaBot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
     is_user_admin,
     user_admin,
 )
-from deadly.modules.helper_funcs.extraction import (
+from ShasaBot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from deadly.modules.helper_funcs.string_handling import extract_time
-from deadly.modules.log_channel import loggable
+from ShasaBot.modules.helper_funcs.string_handling import extract_time
+from ShasaBot.modules.log_channel import loggable
 from telegram import Bot, Chat, ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async

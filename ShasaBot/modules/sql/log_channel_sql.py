@@ -1,6 +1,6 @@
 import threading
 
-from deadly.modules.sql import BASE, SESSION
+from ShasaBot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, distinct, func
 
 

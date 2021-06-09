@@ -8,8 +8,8 @@ from pathlib import Path
 from telethon import events
 
 from pymongo import MongoClient
-from deadly import MONGO_DB_URI
-from deadly import telethn
+from ShasaBot import MONGO_DB_URI
+from ShasaBot import telethn
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
@@ -146,7 +146,7 @@ def bot(**args):
     return decorator
 
 
-def deadly(**args):
+def ShasaBot(**args):
     pattern = args.get("pattern", None)
     disable_edited = args.get("disable_edited", False)
     ignore_unsafe = args.get("ignore_unsafe", False)
@@ -182,32 +182,32 @@ def load_module(shortname):
         pass
     elif shortname.endswith("_"):
         import importlib
-        import deadly.events
+        import ShasaBot.events
 
-        path = Path(f"deadly/modules/{shortname}.py")
-        name = "deadly.modules.{}".format(shortname)
+        path = Path(f"ShasaBot/modules/{shortname}.py")
+        name = "ShasaBot.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         print("Successfully imported " + shortname)
     else:
         import importlib
-        import deadly.events
+        import ShasaBot.events
 
-        path = Path(f"deadly/modules/{shortname}.py")
-        name = "deadly.modules.{}".format(shortname)
+        path = Path(f"ShasaBot/modules/{shortname}.py")
+        name = "ShasaBot.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.register = register
-        mod.deadly = deadly
+        mod.ShasaBot = ShasaBot
         mod.tbot = telethn
         mod.logger = logging.getLogger(shortname)
         spec.loader.exec_module(mod)
-        sys.modules["deadly.modules." + shortname] = mod
+        sys.modules["ShasaBot.modules." + shortname] = mod
         print("Successfully imported " + shortname)
 
 
-path = "deadly/modules/*.py"
+path = "ShasaBot/modules/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as f:

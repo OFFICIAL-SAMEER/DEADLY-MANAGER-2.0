@@ -4,7 +4,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from deadly import (
+from ShasaBot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -25,9 +25,9 @@ from deadly import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from deadly.modules import ALL_MODULES
-from deadly.modules.helper_funcs.chat_status import is_user_admin
-from deadly.modules.helper_funcs.misc import paginate_modules
+from ShasaBot.modules import ALL_MODULES
+from ShasaBot.modules.helper_funcs.chat_status import is_user_admin
+from ShasaBot.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -83,12 +83,12 @@ I am an anime Themed Group Managing Bot and I will help in managing your group\n
 buttons = [
     [
         InlineKeyboardButton(
-            text="🌹 𝙰𝙳𝙳 ᴅᴇᴀᴅʟʏ 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 🌹", url="t.me/deadly_manager_bot?startgroup=true"),
+            text="🌹 𝙰𝙳𝙳 ᴅᴇᴀᴅʟʏ 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 🌹", url="t.me/ShasaBot_manager_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="💞𝙸𝙽𝙵𝙾💞", callback_data="shasa_"),
         InlineKeyboardButton(
-            text="💖𝚂𝚄𝙿𝙿𝙾𝚁𝚃💖", url=f"https://t.me/deadly_manager_support"
+            text="💖𝚂𝚄𝙿𝙿𝙾𝚁𝚃💖", url=f"https://t.me/ShasaBot_manager_support"
         ),           
     ],
     [
@@ -120,7 +120,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("deadly.modules." + module_name)
+    imported_module = importlib.import_module("ShasaBot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -385,7 +385,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *deadly bot*
+            text=""" Hi..🤗 I'm *ShasaBot bot*
                  \nHere is the [Source Code](GAND MARA) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,

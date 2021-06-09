@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/deadly
-RUN git clone -b shiken https://github.com/MdNoor786/deadly /root/deadly
-WORKDIR /root/deadly
+# Copy Python Requirements to /root/ShasaBot
+RUN git clone -b shiken https://github.com/MdNoor786/ShasaBot /root/ShasaBot
+WORKDIR /root/ShasaBot
 
-#Copy config file to /root/deadlyt/deadly
-COPY ./deadly/sample_config.py ./deadly/config.py* /root/deadly/deadly/
+#Copy config file to /root/ShasaBott/ShasaBot
+COPY ./ShasaBot/sample_config.py ./ShasaBot/config.py* /root/ShasaBot/ShasaBot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","deadly"]
+CMD ["python3","-m","ShasaBot"]

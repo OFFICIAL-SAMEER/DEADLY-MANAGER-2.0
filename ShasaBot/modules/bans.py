@@ -5,7 +5,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from deadly import (
+from ShasaBot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -15,8 +15,8 @@ from deadly import (
     WOLVES,
     dispatcher,
 )
-from deadly.modules.disable import DisableAbleCommandHandler
-from deadly.modules.helper_funcs.chat_status import (
+from ShasaBot.modules.disable import DisableAbleCommandHandler
+from ShasaBot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -27,9 +27,9 @@ from deadly.modules.helper_funcs.chat_status import (
     user_can_ban,
     can_delete,
 )
-from deadly.modules.helper_funcs.extraction import extract_user_and_text
-from deadly.modules.helper_funcs.string_handling import extract_time
-from deadly.modules.log_channel import gloggable, loggable
+from ShasaBot.modules.helper_funcs.extraction import extract_user_and_text
+from ShasaBot.modules.helper_funcs.string_handling import extract_time
+from ShasaBot.modules.log_channel import gloggable, loggable
 
 
 @run_async

@@ -11,10 +11,10 @@ from telegram.ext import (
     run_async,
 )
 
-import deadly.modules.sql.users_sql as sql
-from deadly import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from deadly.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from deadly.modules.sql.users_sql import get_all_users
+import ShasaBot.modules.sql.users_sql as sql
+from ShasaBot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from ShasaBot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from ShasaBot.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5

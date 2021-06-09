@@ -3,8 +3,8 @@ from google_trans_new import LANGUAGES, google_translator
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from deadly import dispatcher
-from deadly.modules.disable import DisableAbleCommandHandler
+from ShasaBot import dispatcher
+from ShasaBot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async

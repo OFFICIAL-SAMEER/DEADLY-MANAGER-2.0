@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from deadly import TIME_API_KEY, dispatcher
-from deadly.modules.disable import DisableAbleCommandHandler
+from ShasaBot import TIME_API_KEY, dispatcher
+from ShasaBot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 

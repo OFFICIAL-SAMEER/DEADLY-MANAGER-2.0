@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from deadly import SUPPORT_CHAT, WALL_API, dispatcher
-from deadly.modules.disable import DisableAbleCommandHandler
+from ShasaBot import SUPPORT_CHAT, WALL_API, dispatcher
+from ShasaBot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 

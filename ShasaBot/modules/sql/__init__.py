@@ -1,4 +1,4 @@
-from deadly import DB_URI
+from ShasaBot import DB_URI
 
 from sqlalchemy import create_engine
 

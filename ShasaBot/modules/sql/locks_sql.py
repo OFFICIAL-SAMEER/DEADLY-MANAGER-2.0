@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from deadly.modules.sql import SESSION, BASE
+from ShasaBot.modules.sql import SESSION, BASE
 
 
 class Permissions(BASE):
