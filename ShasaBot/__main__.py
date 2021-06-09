@@ -72,10 +72,10 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-
+                
 
 PM_START_TEXT = """                   
-Hello there, I'm [𝐒𝐀𝐕𝐀𝐆𝐄 𝐁𝐎𝐓](https://telegra.ph/file/581295fcf392bb13dd0d6.jpg)
+Hello there, I'm [𝐃𝐄𝐀𝐃𝐋𝐘 𝐁𝐎𝐓](https://telegra.ph/file/581295fcf392bb13dd0d6.jpg)
 I am an anime Themed Group Managing Bot and I will help in managing your group\n
 ✪ Make sure you read *𝙸𝙽𝙵𝙾* Section Below ✪ \n
 𝐌𝐘 𝐆𝐎𝐃 - [丂卂爪乇乇尺](t.me/SAMEER_795)
@@ -83,13 +83,13 @@ I am an anime Themed Group Managing Bot and I will help in managing your group\n
 buttons = [
     [
         InlineKeyboardButton(
-            text="🌹 𝙰𝙳𝙳 𝚂𝙰𝚅𝙰𝙶𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 🌹", url="t.me/savage_manager_bot?startgroup=true"),
+            text="🌹 𝙰𝙳𝙳 ᴅᴇᴀᴅʟʏ 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 🌹", url="t.me/deadly_manager_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="💞𝙸𝙽𝙵𝙾💞", callback_data="shasa_"),
         InlineKeyboardButton(
-            text="💖𝚂𝚄𝙿𝙿𝙾𝚁𝚃💖", url=f"https://t.me/{SUPPORT_CHAT}"
-        ),
+            text="💖𝚂𝚄𝙿𝙿𝙾𝚁𝚃💖", url=f"https://t.me/deadly_manager_support"
+        ),           
     ],
     [
         InlineKeyboardButton(text="💝𝙷𝙴𝙻𝙿💝", callback_data="help_back"),
@@ -98,7 +98,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-`𝙷𝙸, 𝙸 𝙰𝙼` [𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃❤️](https://telegra.ph/file/52a4f3628ea7975119b5c.jpg)
+`𝙷𝙸, 𝙸 𝙰𝙼` [𝙳𝙴𝙰𝙳𝙻𝚈 𝙱𝙾𝚃❤️](https://telegra.ph/file/52a4f3628ea7975119b5c.jpg)
 `𝙸 𝙰𝙼 𝙷𝙴𝚁𝙴 𝚃𝙾 𝙼𝙰𝙽𝙰𝙶𝙴 𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙿𝙴𝚁𝙵𝙴𝙲𝚃𝙻𝚈..`"""
 
 
@@ -352,14 +352,14 @@ def shasa_about_callback(update, context):
     query = update.callback_query
     if query.data == "shasa_":
         query.message.edit_text(
-            text="""ℹ️ 𝙷𝙸 𝙸 𝙰𝙼 𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃 ..𝙸 𝙲𝙰𝙽 𝙴𝙰𝚂𝙸𝙻𝚈 𝙼𝙰𝙽𝙰𝙶𝙴 𝚄𝚁 𝙶𝚁𝙾𝚄𝙿.
+            text="""ℹ️ 𝙷𝙸 𝙸 𝙰𝙼 𝙳𝙴𝙰𝙳𝙻𝚈 𝙱𝙾𝚃 ..𝙸 𝙲𝙰𝙽 𝙴𝙰𝚂𝙸𝙻𝚈 𝙼𝙰𝙽𝙰𝙶𝙴 𝚄𝚁 𝙶𝚁𝙾𝚄𝙿.
              ❍ 𝙸 𝙲𝙰𝙽 𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃 𝚄𝚂𝙴𝚁𝚂.
              ❍ 𝙸 𝙲𝙰𝙽 𝙶𝚁𝙴𝙴𝚃 𝚄𝚂𝙴𝚁𝚂 𝚆𝙸𝚃𝙷 𝙲𝚄𝚂𝚃𝙾𝙼𝙸𝚉𝙰𝙱𝙻𝙴 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝙼𝚂𝙶 𝙰𝙽𝙳 𝙴𝚅𝙴𝙽 𝚂𝙴𝚃 𝙰 𝙶𝚁𝙾𝚄𝙿'𝚂 𝚁𝚄𝙻𝙴𝚂.
              ❍ 𝙸 𝙷𝙰𝚅𝙴 𝙰𝙽 𝙰𝙳𝚅𝙰𝙽𝚅𝙴𝙳 𝙰𝙽𝚃𝙸𝙵𝙻𝙾𝙾𝙳 𝚂𝚈𝚂𝚃𝙾𝙼.
              ❍ 𝙸 𝙲𝙰𝙽 𝚆𝙰𝚁𝙽 𝚄𝚂𝙴𝚁𝚂 𝚄𝙽𝚃𝙸𝙻 𝚃𝙷𝙴𝚈 𝚁𝙴𝙰𝙲𝙷 𝙼𝙰𝚇 𝚆𝙰𝚁𝙽𝚂 𝙻𝙸𝙼𝙸𝚃.
              ❍ 𝙸 𝙷𝙰𝚅𝙰 𝙰 𝙽𝙾𝚃𝙴 𝙺𝙴𝙴𝙿𝙸𝙽𝙶 𝚂𝚈𝚂𝚃𝙴𝙼.
              
-              𝙸𝙵 𝚈𝙾𝚄 𝙷𝙰𝚅𝙴 𝙰𝙽𝚈 𝚀𝚄𝙴𝚂𝚃𝙸𝙾𝙽 𝙰𝙱𝙾𝚄𝚃 𝚂𝙰𝚅𝙰𝙶𝙴 𝙱𝙾𝚃 𝙻𝙴𝚃 𝚄𝚂 𝙺𝙽𝙾𝚆 𝙰𝚃[𝚂𝚄𝙿𝙿𝙾𝚁𝚃](https://t.me/Savage_manager_bot).""",
+              𝙸𝙵 𝚈𝙾𝚄 𝙷𝙰𝚅𝙴 𝙰𝙽𝚈 𝚀𝚄𝙴𝚂𝚃𝙸𝙾𝙽 𝙰𝙱𝙾𝚄𝚃 𝙳𝙴𝙰𝙳𝙻𝚈 𝙱𝙾𝚃 𝙻𝙴𝚃 𝚄𝚂 𝙺𝙽𝙾𝚆 𝙰𝚃[𝚂𝚄𝙿𝙿𝙾𝚁𝚃](https://t.me/DEADLY_manager_SUPPORT).""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -385,7 +385,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *savavs bot*
+            text=""" Hi..🤗 I'm *deadly bot*
                  \nHere is the [Source Code](GAND MARA) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
