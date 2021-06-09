@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from ShasaBot import LOGGER, dispatcher
-from ShasaBot.modules.disable import DisableAbleMessageHandler
-from ShasaBot.modules.helper_funcs.regex_helper import infinite_loop_check
+from deadly import LOGGER, dispatcher
+from deadly.modules.disable import DisableAbleMessageHandler
+from deadly.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 

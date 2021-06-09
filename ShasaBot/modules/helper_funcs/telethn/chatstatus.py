@@ -1,5 +1,5 @@
-from ShasaBot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from ShasaBot import DRAGONS
+from deadly.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from deadly import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 

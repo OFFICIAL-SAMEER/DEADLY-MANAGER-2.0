@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from ShasaBot import dispatcher, LOGGER, DRAGONS
-from ShasaBot.modules.disable import DisableAbleCommandHandler
-from ShasaBot.modules.helper_funcs.handlers import MessageHandlerChecker
-from ShasaBot.modules.helper_funcs.chat_status import user_admin
-from ShasaBot.modules.helper_funcs.extraction import extract_text
-from ShasaBot.modules.helper_funcs.filters import CustomFilters
-from ShasaBot.modules.helper_funcs.misc import build_keyboard_parser
-from ShasaBot.modules.helper_funcs.msg_types import get_filter_type
-from ShasaBot.modules.helper_funcs.string_handling import (
+from deadly import dispatcher, LOGGER, DRAGONS
+from deadly.modules.disable import DisableAbleCommandHandler
+from deadly.modules.helper_funcs.handlers import MessageHandlerChecker
+from deadly.modules.helper_funcs.chat_status import user_admin
+from deadly.modules.helper_funcs.extraction import extract_text
+from deadly.modules.helper_funcs.filters import CustomFilters
+from deadly.modules.helper_funcs.misc import build_keyboard_parser
+from deadly.modules.helper_funcs.msg_types import get_filter_type
+from deadly.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from ShasaBot.modules.sql import cust_filters_sql as sql
+from deadly.modules.sql import cust_filters_sql as sql
 
-from ShasaBot.modules.connection import connected
+from deadly.modules.connection import connected
 
-from ShasaBot.modules.helper_funcs.alternate import send_message, typing_action
+from deadly.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 

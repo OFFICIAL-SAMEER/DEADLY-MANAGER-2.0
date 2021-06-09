@@ -1,15 +1,15 @@
-from ShasaBot import telethn as tbot
-from ShasaBot.events import register
+from deadly import telethn as tbot
+from deadly.events import register
 import os
 import asyncio
 import os
 import time
 from datetime import datetime
-from ShasaBot import OWNER_ID
-from ShasaBot import TEMP_DOWNLOAD_DIRECTORY as path
-from ShasaBot import TEMP_DOWNLOAD_DIRECTORY
+from deadly import OWNER_ID
+from deadly import TEMP_DOWNLOAD_DIRECTORY as path
+from deadly import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './ShasaBot/resources/Shasa.jpg'
+water = './deadly/resources/Shasa.jpg'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
@@ -21,7 +21,7 @@ async def Prof(event):
     thumb = water
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
-    the_plugin_file = "./ShasaBot/modules/{}.py".format(input_str)
+    the_plugin_file = "./deadly/modules/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
      message_id = event.message.id
      await event.client.send_file(
@@ -36,7 +36,7 @@ async def Prof(event):
         await event.reply("No File Found!")
 
 
-from ShasaBot.events import load_module
+from deadly.events import load_module
 import asyncio
 import os
 from datetime import datetime
@@ -55,7 +55,7 @@ async def install(event):
             downloaded_file_name = (
                 await event.client.download_media(  # pylint:disable=E0602
                     await event.get_reply_message(),
-                    "ShasaBot/modules/",  # pylint:disable=E0602
+                    "deadly/modules/",  # pylint:disable=E0602
                 )
             )
             if "(" not in downloaded_file_name:

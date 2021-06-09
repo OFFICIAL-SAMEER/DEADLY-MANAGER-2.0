@@ -13,7 +13,7 @@
 
 from sqlalchemy import Column, String
 
-from ShasaBot.modules.sql import BASE, SESSION
+from deadly.modules.sql import BASE, SESSION
 
 
 class Nsfwatch(BASE):

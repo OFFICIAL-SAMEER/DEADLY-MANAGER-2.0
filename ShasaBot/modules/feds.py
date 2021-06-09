@@ -6,8 +6,8 @@ import time
 import uuid
 from io import BytesIO
 
-import ShasaBot.modules.sql.feds_sql as sql
-from ShasaBot import (
+import deadly.modules.sql.feds_sql as sql
+from deadly import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
@@ -17,15 +17,15 @@ from ShasaBot import (
     WOLVES,
     dispatcher,
 )
-from ShasaBot.modules.disable import DisableAbleCommandHandler
-from ShasaBot.modules.helper_funcs.alternate import send_message
-from ShasaBot.modules.helper_funcs.chat_status import is_user_admin
-from ShasaBot.modules.helper_funcs.extraction import (
+from deadly.modules.disable import DisableAbleCommandHandler
+from deadly.modules.helper_funcs.alternate import send_message
+from deadly.modules.helper_funcs.chat_status import is_user_admin
+from deadly.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from ShasaBot.modules.helper_funcs.string_handling import markdown_parser
+from deadly.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,

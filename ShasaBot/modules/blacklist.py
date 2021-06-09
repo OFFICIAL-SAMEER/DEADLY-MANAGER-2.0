@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import ShasaBot.modules.sql.blacklist_sql as sql
-from ShasaBot import dispatcher, LOGGER
-from ShasaBot.modules.disable import DisableAbleCommandHandler
-from ShasaBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from ShasaBot.modules.helper_funcs.extraction import extract_text
-from ShasaBot.modules.helper_funcs.misc import split_message
-from ShasaBot.modules.log_channel import loggable
-from ShasaBot.modules.warns import warn
-from ShasaBot.modules.helper_funcs.string_handling import extract_time
-from ShasaBot.modules.connection import connected
-from ShasaBot.modules.sql.approve_sql import is_approved
-from ShasaBot.modules.helper_funcs.alternate import send_message, typing_action
+import deadly.modules.sql.blacklist_sql as sql
+from deadly import dispatcher, LOGGER
+from deadly.modules.disable import DisableAbleCommandHandler
+from deadly.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from deadly.modules.helper_funcs.extraction import extract_text
+from deadly.modules.helper_funcs.misc import split_message
+from deadly.modules.log_channel import loggable
+from deadly.modules.warns import warn
+from deadly.modules.helper_funcs.string_handling import extract_time
+from deadly.modules.connection import connected
+from deadly.modules.sql.approve_sql import is_approved
+from deadly.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 

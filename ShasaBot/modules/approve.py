@@ -1,11 +1,11 @@
 import html
-from ShasaBot.modules.disable import DisableAbleCommandHandler
-from ShasaBot import dispatcher, DRAGONS
-from ShasaBot.modules.helper_funcs.extraction import extract_user
+from deadly.modules.disable import DisableAbleCommandHandler
+from deadly import dispatcher, DRAGONS
+from deadly.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler, Filters, run_async
-import ShasaBot.modules.sql.approve_sql as sql
-from ShasaBot.modules.helper_funcs.chat_status import user_admin
-from ShasaBot.modules.log_channel import loggable
+import deadly.modules.sql.approve_sql as sql
+from deadly.modules.helper_funcs.chat_status import user_admin
+from deadly.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest

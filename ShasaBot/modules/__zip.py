@@ -5,9 +5,9 @@ import zipfile
 from telethon import types
 from telethon.tl import functions
 
-from ShasaBot import TEMP_DOWNLOAD_DIRECTORY
-from ShasaBot import telethn as client
-from ShasaBot.events import register
+from deadly import TEMP_DOWNLOAD_DIRECTORY
+from deadly import telethn as client
+from deadly.events import register
 
 
 async def is_register_admin(chat, user):

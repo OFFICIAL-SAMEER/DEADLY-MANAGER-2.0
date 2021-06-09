@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from ShasaBot import (
+from deadly import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -24,15 +24,15 @@ from ShasaBot import (
     dispatcher,
     sw,
 )
-from ShasaBot.__main__ import STATS, TOKEN, USER_INFO
-import ShasaBot.modules.sql.userinfo_sql as sql
-from ShasaBot.modules.disable import DisableAbleCommandHandler
-from ShasaBot.modules.sql.global_bans_sql import is_user_gbanned
-from ShasaBot.modules.sql.afk_sql import is_afk, check_afk_status
-from ShasaBot.modules.sql.users_sql import get_user_num_chats
-from ShasaBot.modules.helper_funcs.chat_status import sudo_plus
-from ShasaBot.modules.helper_funcs.extraction import extract_user
-from ShasaBot import telethn as ShasaTelethonClient, TIGERS, DRAGONS, DEMONS
+from deadly.__main__ import STATS, TOKEN, USER_INFO
+import deadly.modules.sql.userinfo_sql as sql
+from deadly.modules.disable import DisableAbleCommandHandler
+from deadly.modules.sql.global_bans_sql import is_user_gbanned
+from deadly.modules.sql.afk_sql import is_afk, check_afk_status
+from deadly.modules.sql.users_sql import get_user_num_chats
+from deadly.modules.helper_funcs.chat_status import sudo_plus
+from deadly.modules.helper_funcs.extraction import extract_user
+from deadly import telethn as ShasaTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):

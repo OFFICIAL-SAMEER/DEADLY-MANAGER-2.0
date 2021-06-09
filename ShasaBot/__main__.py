@@ -4,7 +4,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from ShasaBot import (
+from deadly import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -25,9 +25,9 @@ from ShasaBot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from ShasaBot.modules import ALL_MODULES
-from ShasaBot.modules.helper_funcs.chat_status import is_user_admin
-from ShasaBot.modules.helper_funcs.misc import paginate_modules
+from deadly.modules import ALL_MODULES
+from deadly.modules.helper_funcs.chat_status import is_user_admin
+from deadly.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -120,7 +120,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("ShasaBot.modules." + module_name)
+    imported_module = importlib.import_module("deadly.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 

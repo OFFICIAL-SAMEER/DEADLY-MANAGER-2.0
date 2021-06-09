@@ -1,15 +1,15 @@
 
 import html
 
-from ShasaBot import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from ShasaBot.modules.disable import DisableAbleCommandHandler
-from ShasaBot.modules.helper_funcs.chat_status import (
+from deadly import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from deadly.modules.disable import DisableAbleCommandHandler
+from deadly.modules.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from ShasaBot.modules.sql import cleaner_sql as sql
+from deadly.modules.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,

@@ -1,9 +1,9 @@
 from time import sleep
 
-import ShasaBot.modules.sql.global_bans_sql as gban_sql
-import ShasaBot.modules.sql.users_sql as user_sql
-from ShasaBot import DEV_USERS, OWNER_ID, dispatcher
-from ShasaBot.modules.helper_funcs.chat_status import dev_plus
+import deadly.modules.sql.global_bans_sql as gban_sql
+import deadly.modules.sql.users_sql as user_sql
+from deadly import DEV_USERS, OWNER_ID, dispatcher
+from deadly.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (

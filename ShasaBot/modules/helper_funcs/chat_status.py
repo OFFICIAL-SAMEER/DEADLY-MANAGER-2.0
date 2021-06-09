@@ -2,7 +2,7 @@ from time import perf_counter
 from functools import wraps
 from cachetools import TTLCache
 from threading import RLock
-from ShasaBot import (
+from deadly import (
     DEL_CMDS,
     DEV_USERS,
     DRAGONS,
@@ -402,6 +402,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from ShasaBot.modules import connection
+from deadly.modules import connection
 
 connected = connection.connected

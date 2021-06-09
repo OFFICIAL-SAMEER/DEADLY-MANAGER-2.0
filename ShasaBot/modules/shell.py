@@ -1,7 +1,7 @@
 import subprocess
 
-from ShasaBot import LOGGER, dispatcher
-from ShasaBot.modules.helper_funcs.chat_status import dev_plus
+from deadly import LOGGER, dispatcher
+from deadly.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async

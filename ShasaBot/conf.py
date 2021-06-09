@@ -1,5 +1,5 @@
 from envparse import env
-from ShasaBot import LOGGER
+from deadly import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,

@@ -1,7 +1,7 @@
 import io
-from ShasaBot.events import register
-from ShasaBot import telethn as borg
-from ShasaBot import telethn as pbot
+from deadly.events import register
+from deadly import telethn as borg
+from deadly import telethn as pbot
 from telethon import types
 from telethon import events
 from telethon.tl import functions, types
