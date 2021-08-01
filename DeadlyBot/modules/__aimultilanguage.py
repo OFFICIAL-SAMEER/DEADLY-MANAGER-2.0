@@ -1,6 +1,6 @@
 #    Copyright (C) 2020-2021 by @AmarnathCdj & @InukaAsith
 #    Chatbot system written by @AmarnathCdj databse added and recoded for pyrogram by @InukaAsith
-#    This programme is a part of deadly (TG bot) project
+#    This programme is a part of ShasaBot (TG bot) project
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -27,7 +27,7 @@ from pyrogram import filters
 
 from DeadlyBot.helper_extra.aichat import add_chat, get_session, remove_chat
 from DeadlyBot.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from DeadlyBot import pbot as deadly
+from DeadlyBot import pbot as ShasaBot
 
 translator = google_translator()
 
@@ -36,12 +36,12 @@ def extract_emojis(s):
     return "".join(c for c in s if c in emoji.UNICODE_EMOJI)
 
 BOT_ID = 1791708933
-deadly_chats = []
+ShasaBot_chats = []
 en_chats = []
 # AI Chat (C) 2020-2021 by @InukaAsith
 
 
-@deadly.on_message(filters.command("chatbot") & ~filters.edited & ~filters.bot)
+@ShasaBot.on_message(filters.command("chatbot") & ~filters.edited & ~filters.bot)
 @admins_only
 async def hmm(_, message):
     global asuna_chats
@@ -56,20 +56,20 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("deadly AI Already Activated In This Chat")
+            await lel.edit("ShasaBot AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"deadly AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"ShasaBot AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("deadly AI Was Not Activated In This Chat")
+            await lel.edit("ShasaBot AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"deadly AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"ShasaBot AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -85,7 +85,7 @@ async def hmm(_, message):
         )
 
 
-@deadly.on_message(
+@ShasaBot.on_message(
     filters.text & filters.reply & ~filters.bot & ~filters.via_bot & ~filters.forwarded,
     group=2,
 )
@@ -98,8 +98,8 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("deadly", "Aco")
-        test = test.replace("deadly", "Aco")
+        test = test.replace("ShasaBot", "Aco")
+        test = test.replace("ShasaBot", "Aco")
         querystring = {
             "bid": "178",
             "key": "sX5A2PcYZbsN5EY6",
@@ -114,12 +114,12 @@ async def hmm(client, message):
         result = response.text
         result = result.replace('{"cnt":"', "")
         result = result.replace('"}', "")
-        result = result.replace("Aco", "deadly")
+        result = result.replace("Aco", "ShasaBot")
         result = result.replace("<a href=\\", "<a href =")
         result = result.replace("<\/a>", "</a>")
         pro = result
         try:
-            await deadly.send_chat_action(message.chat.id, "typing")
+            await ShasaBot.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError as e:
             print(e)
@@ -160,8 +160,8 @@ async def hmm(client, message):
         # test = emoji.demojize(test.strip())
 
         # Kang with the credits bitches @InukaASiTH
-        test = test.replace("deadly", "Aco")
-        test = test.replace("deadly", "Aco")
+        test = test.replace("ShasaBot", "Aco")
+        test = test.replace("ShasaBot", "Aco")
         querystring = {
             "bid": "178",
             "key": "sX5A2PcYZbsN5EY6",
@@ -176,20 +176,20 @@ async def hmm(client, message):
         result = response.text
         result = result.replace('{"cnt":"', "")
         result = result.replace('"}', "")
-        result = result.replace("Aco", "deadly")
+        result = result.replace("Aco", "ShasaBot")
         result = result.replace("<a href=\\", "<a href =")
         result = result.replace("<\/a>", "</a>")
         pro = result
         if not "en" in lan and not lan == "":
             pro = translator.translate(pro, lang_tgt=lan[0])
         try:
-            await deadly.send_chat_action(message.chat.id, "typing")
+            await ShasaBot.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError as e:
             print(e)
 
 
-@deadly.on_message(filters.text & filters.private & filters.reply & ~filters.bot)
+@ShasaBot.on_message(filters.text & filters.private & filters.reply & ~filters.bot)
 async def inuka(client, message):
     msg = message.text
     if msg.startswith("/") or msg.startswith("@"):
@@ -230,8 +230,8 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("deadly", "Aco")
-    test = test.replace("deadly", "Aco")
+    test = test.replace("ShasaBot", "Aco")
+    test = test.replace("ShasaBot", "Aco")
     querystring = {
         "bid": "178",
         "key": "sX5A2PcYZbsN5EY6",
@@ -246,21 +246,21 @@ async def inuka(client, message):
     result = response.text
     result = result.replace('{"cnt":"', "")
     result = result.replace('"}', "")
-    result = result.replace("Aco", "deadly")
+    result = result.replace("Aco", "ShasaBot")
     result = result.replace("<a href=\\", "<a href =")
     result = result.replace("<\/a>", "</a>")
     pro = result
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
-        await deadly.send_chat_action(message.chat.id, "typing")
+        await ShasaBot.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError as e:
         print(e)
 
 
-@deadly.on_message(
-    filters.regex("deadly|Deadly|huntinbots|hello|hi")
+@ShasaBot.on_message(
+    filters.regex("ShasaBot|Deadly|huntinbots|hello|hi")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -308,8 +308,8 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("deadly", "Aco")
-    test = test.replace("deadly", "Aco")
+    test = test.replace("ShasaBot", "Aco")
+    test = test.replace("ShasaBot", "Aco")
     querystring = {
         "bid": "178",
         "key": "sX5A2PcYZbsN5EY6",
@@ -324,14 +324,14 @@ async def inuka(client, message):
     result = response.text
     result = result.replace('{"cnt":"', "")
     result = result.replace('"}', "")
-    result = result.replace("Aco", "deadly")
+    result = result.replace("Aco", "ShasaBot")
     result = result.replace("<a href=\\", "<a href =")
     result = result.replace("<\/a>", "</a>")
     pro = result
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
-        await deadly.send_chat_action(message.chat.id, "typing")
+        await ShasaBot.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError as e:
         print(e)
