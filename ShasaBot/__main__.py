@@ -88,7 +88,7 @@ buttons = [
     [
         InlineKeyboardButton(text="💞𝙸𝙽𝙵𝙾💞", callback_data="shasa_"),
         InlineKeyboardButton(
-            text="💖𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝙽𝙽𝙴𝙻💖", url=f"https://t.me/DEADLY_manager_op"),                   
+            text="💖𝚂𝚄𝙿𝙿𝙾𝚁𝚃💖", url=f"https://t.me/DEADLY_manager_op"),                   
     ],
     [
         InlineKeyboardButton(text="💝𝙷𝙴𝙻𝙿💝", callback_data="help"),
