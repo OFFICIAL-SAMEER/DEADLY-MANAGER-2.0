@@ -39,7 +39,7 @@ async def Lycia(_, message):
         L = await fetch(f"https://api.affiliateplus.xyz/api/chatbot?message={lycia}&botname=Deadly&ownername=@Simpleboy787&user=1")
         chatbot = L["message"]
         VoiceAi = f"https://lyciavoice.herokuapp.com/lycia?text={chatbot}&lang=hi"
-        name = "ShasaBot"
+        name = "DeadlyBot"
     except Exception as e:
         await m.edit(str(e))
         return

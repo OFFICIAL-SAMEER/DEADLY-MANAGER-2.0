@@ -631,7 +631,7 @@ def devlist(update: Update, context: CallbackContext):
 #  ❍ /gignoreblue*:* <word>*:* Globally ignorea bluetext cleaning of saved word across DeadlyBot.
 #  ❍ /ungignoreblue*:* <word>*:* Remove said command from global cleaning list
 
-# *ShasaBot Core*
+# *DeadlyBot Core*
 # *Owner only*
 #  ❍ /send*:* <module name>*:* Send module
 #  ❍ /install*:* <reply to a .py>*:* Install module 
