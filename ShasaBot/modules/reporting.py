@@ -1,9 +1,9 @@
 import html
 
-from ShasaBot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
-from ShasaBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from ShasaBot.modules.log_channel import loggable
-from ShasaBot.modules.sql import reporting_sql as sql
+from DeadlyBot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
+from DeadlyBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from DeadlyBot.modules.log_channel import loggable
+from DeadlyBot.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (

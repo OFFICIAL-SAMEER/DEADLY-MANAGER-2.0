@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, UnicodeText, Integer, String, Boolean
 
-from ShasaBot.modules.sql import BASE, SESSION
+from DeadlyBot.modules.sql import BASE, SESSION
 
 
 class GloballyMutedUsers(BASE):

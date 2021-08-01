@@ -1,7 +1,7 @@
 import threading
 
-from ShasaBot import dispatcher
-from ShasaBot.modules.sql import BASE, SESSION
+from DeadlyBot import dispatcher
+from DeadlyBot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,

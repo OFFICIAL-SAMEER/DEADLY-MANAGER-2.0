@@ -1,6 +1,6 @@
-from ShasaBot import dispatcher
-from ShasaBot.modules.disable import DisableAbleCommandHandler
-from ShasaBot.modules.helper_funcs.alternate import typing_action
+from DeadlyBot import dispatcher
+from DeadlyBot.modules.disable import DisableAbleCommandHandler
+from DeadlyBot.modules.helper_funcs.alternate import typing_action
 from telegram import ParseMode
 from telegram.ext import run_async
 

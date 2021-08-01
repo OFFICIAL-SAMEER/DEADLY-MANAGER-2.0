@@ -1,12 +1,12 @@
 import random, html
 
-from ShasaBot import dispatcher
-from ShasaBot.modules.disable import (
+from DeadlyBot import dispatcher
+from DeadlyBot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from ShasaBot.modules.sql import afk_sql as sql
-from ShasaBot.modules.users import get_user_id
+from DeadlyBot.modules.sql import afk_sql as sql
+from DeadlyBot.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async

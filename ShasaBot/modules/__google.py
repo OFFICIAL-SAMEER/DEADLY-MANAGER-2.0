@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib
-from ShasaBot import telethn as tbot
+from DeadlyBot import telethn as tbot
 import glob
 import io
 import os
@@ -21,9 +21,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from ShasaBot import *
+from DeadlyBot import *
 
-from ShasaBot.events import register
+from DeadlyBot.events import register
 
 opener = urllib.request.build_opener()
 useragent = "Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36"
@@ -267,7 +267,7 @@ async def apk(e):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\n===> Shasa <==="
+        app_details += "\n\n===> Deadly <==="
         await e.reply(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await e.reply("No result found in search. Please enter **Valid app name**")
@@ -286,6 +286,6 @@ __help__ = """
  ❍ /github <username>*:* Get information about a GitHub user.
  ❍ /country <country name>*:* Gathering info about given country
  ❍ /imdb <Movie name>*:* Get full info about a movie with imdb.com
- ❍ Shasa <query>*:* Shasa answers the query
-  💡Ex: `Shasa where is India?`
+ ❍ Deadly <query>*:* Deadly answers the query
+  💡Ex: `Deadly where is India?`
 """

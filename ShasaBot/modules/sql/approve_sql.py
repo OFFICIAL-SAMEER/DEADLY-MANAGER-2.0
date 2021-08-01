@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Integer, func, distinct
 
-from ShasaBot.modules.sql import BASE, SESSION
+from DeadlyBot.modules.sql import BASE, SESSION
 
 class Approvals(BASE):
     __tablename__ = "approval"

@@ -5,10 +5,10 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import ShasaBot
+import DeadlyBot
 
-from ShasaBot import dispatcher
-from ShasaBot.modules.helper_funcs.chat_status import dev_plus
+from DeadlyBot import dispatcher
+from DeadlyBot.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
@@ -18,12 +18,12 @@ from telegram.ext import CallbackContext, CommandHandler, run_async
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        update.effective_message.reply_text(f"Current state: {ShasaBot.ALLOW_CHATS}")
+        update.effective_message.reply_text(f"Current state: {DeadlyBot.ALLOW_CHATS}")
         return
     if args[0].lower() in ["off", "no"]:
-        ShasaBot.ALLOW_CHATS = True
+        DeadlyBot.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
-        ShasaBot.ALLOW_CHATS = False
+        DeadlyBot.ALLOW_CHATS = False
     else:
         update.effective_message.reply_text("Format: /lockdown Yes/No or Off/On")
         return

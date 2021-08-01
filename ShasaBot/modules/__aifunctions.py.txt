@@ -4,8 +4,8 @@
 
 import requests
 url = "https://iamai.p.rapidapi.com/ask"
-from ShasaBot import telethn, OWNER_ID
-from ShasaBot.events import register
+from DeadlyBot import telethn, OWNER_ID
+from DeadlyBot.events import register
 from telethon import events
 from telethon import types
 from telethon.tl import functions

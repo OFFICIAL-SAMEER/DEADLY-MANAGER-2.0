@@ -1,4 +1,4 @@
 @echo off
-TITLE Miss Shasa
-:: Enables virtual env mode and then starts Shasa
-env\scripts\activate.bat && py -m ShasaBott
+TITLE Miss Deadly
+:: Enables virtual env mode and then starts Deadly
+env\scripts\activate.bat && py -m DeadlyBott

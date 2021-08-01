@@ -1,9 +1,9 @@
 from typing import Optional
 
-import ShasaBot.modules.sql.rules_sql as sql
-from ShasaBot import dispatcher
-from ShasaBot.modules.helper_funcs.chat_status import user_admin
-from ShasaBot.modules.helper_funcs.string_handling import markdown_parser
+import DeadlyBot.modules.sql.rules_sql as sql
+from DeadlyBot import dispatcher
+from DeadlyBot.modules.helper_funcs.chat_status import user_admin
+from DeadlyBot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,

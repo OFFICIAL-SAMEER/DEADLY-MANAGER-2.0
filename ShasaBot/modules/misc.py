@@ -1,6 +1,6 @@
-from ShasaBot.modules.helper_funcs.chat_status import user_admin
-from ShasaBot.modules.disable import DisableAbleCommandHandler
-from ShasaBot import dispatcher
+from DeadlyBot.modules.helper_funcs.chat_status import user_admin
+from DeadlyBot.modules.disable import DisableAbleCommandHandler
+from DeadlyBot import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update

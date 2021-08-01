@@ -1,8 +1,8 @@
 import math
 
 import pynewtonmath as newton
-from ShasaBot import dispatcher
-from ShasaBot.modules.disable import DisableAbleCommandHandler
+from DeadlyBot import dispatcher
+from DeadlyBot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 

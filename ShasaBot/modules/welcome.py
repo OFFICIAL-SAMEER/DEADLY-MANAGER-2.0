@@ -5,9 +5,9 @@ import time
 from functools import partial
 from contextlib import suppress
 
-import ShasaBot.modules.sql.welcome_sql as sql
-import ShasaBot
-from ShasaBot import (
+import DeadlyBot.modules.sql.welcome_sql as sql
+import DeadlyBot
+from DeadlyBot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -19,18 +19,18 @@ from ShasaBot import (
     dispatcher,
     JOIN_LOGGER
 )
-from ShasaBot.modules.helper_funcs.chat_status import (
+from DeadlyBot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from ShasaBot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from ShasaBot.modules.helper_funcs.msg_types import get_welcome_type
-from ShasaBot.modules.helper_funcs.string_handling import (
+from DeadlyBot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from DeadlyBot.modules.helper_funcs.msg_types import get_welcome_type
+from DeadlyBot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from ShasaBot.modules.log_channel import loggable
-from ShasaBot.modules.sql.global_bans_sql import is_user_gbanned
+from DeadlyBot.modules.log_channel import loggable
+from DeadlyBot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
@@ -265,7 +265,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome yourself
             elif new_mem.id == bot.id:
                 creator = None
-                if not ShasaBot.ALLOW_CHATS:
+                if not DeadlyBot.ALLOW_CHATS:
                     with suppress(BadRequest):
                          update.effective_message.reply_text(f"Groups are disabled for {bot.first_name}, I'm outta here.")
                     bot.leave_chat(update.effective_chat.id)

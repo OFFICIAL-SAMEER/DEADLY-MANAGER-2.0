@@ -6,11 +6,11 @@
          "anime",
          "group",
          "manager",
-         "Shasa"
+         "Deadly"
       ],
     
    "logo":    "https://telegra.ph/file/c3254e92e7672b773f942.jpg",  
-   "repository": "https://github.com/Mdnoor786/ShasaBot",
+   "repository": "https://github.com/Mdnoor786/DeadlyBot",
    "addons": [
           {
          "options": {
@@ -65,7 +65,7 @@
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "Shasa_RoBot"
+         "value": "Deadly_RoBot"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",

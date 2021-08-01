@@ -1,4 +1,4 @@
-from ShasaBot.mongo import db
+from DeadlyBot.mongo import db
 from typing import Dict, List, Union
 
 

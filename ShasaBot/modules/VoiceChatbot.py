@@ -5,7 +5,7 @@ import aiofiles
 import aiohttp
 from random import randint
 from pyrogram import filters
-from ShasaBot import pbot as LYCIA
+from DeadlyBot import pbot as LYCIA
 
 async def fetch(url):
     async with aiohttp.ClientSession() as session:
@@ -27,16 +27,16 @@ async def ai_lycia(url):
     return ai_name
 
 
-@LYCIA.on_message(filters.command("Shasa"))
+@LYCIA.on_message(filters.command("Deadly"))
 async def Lycia(_, message):
     if len(message.command) < 2:
         await message.reply_text("Lycia AI Voice Chatbot")
         return
     text = message.text.split(None, 1)[1]
     lycia = text.replace(" ", "%20")
-    m = await message.reply_text("Shasa Is Best...")
+    m = await message.reply_text("Deadly Is Best...")
     try:
-        L = await fetch(f"https://api.affiliateplus.xyz/api/chatbot?message={lycia}&botname=Shasa&ownername=@Simpleboy787&user=1")
+        L = await fetch(f"https://api.affiliateplus.xyz/api/chatbot?message={lycia}&botname=Deadly&ownername=@Simpleboy787&user=1")
         chatbot = L["message"]
         VoiceAi = f"https://lyciavoice.herokuapp.com/lycia?text={chatbot}&lang=hi"
         name = "shasa"

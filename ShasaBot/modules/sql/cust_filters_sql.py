@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
 
-from ShasaBot.modules.helper_funcs.msg_types import Types
-from ShasaBot.modules.sql import BASE, SESSION
+from DeadlyBot.modules.helper_funcs.msg_types import Types
+from DeadlyBot.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):

@@ -1,7 +1,7 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
-import ShasaBot.modules.sql.blacklistusers_sql as sql
-from ShasaBot import (
+import DeadlyBot.modules.sql.blacklistusers_sql as sql
+from DeadlyBot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -10,12 +10,12 @@ from ShasaBot import (
     WOLVES,
     dispatcher,
 )
-from ShasaBot.modules.helper_funcs.chat_status import dev_plus
-from ShasaBot.modules.helper_funcs.extraction import (
+from DeadlyBot.modules.helper_funcs.chat_status import dev_plus
+from DeadlyBot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from ShasaBot.modules.log_channel import gloggable
+from DeadlyBot.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async

@@ -4,7 +4,7 @@ import os
 
 
 def get_user_list(config, key):
-    with open("{}/ShasaBot/{}".format(os.getcwd(), config), "r") as json_file:
+    with open("{}/DeadlyBot/{}".format(os.getcwd(), config), "r") as json_file:
         return json.load(json_file)[key]
 
 
@@ -19,7 +19,7 @@ class Config(object):
     TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 1837687523  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "MdNoor"
-    SUPPORT_CHAT = "MissShasa_Gbot"  # Your own group for support, do not add the @
+    SUPPORT_CHAT = "MissDeadly_Gbot"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
         -1001236063876
     )  # Prints any new group the bot is added to, prints just the name and ID.

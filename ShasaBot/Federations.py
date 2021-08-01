@@ -6,20 +6,20 @@
 #If you want to improve anything, then you can pull it or join @TheCodeTech.
 #No Copyright Allowed
 
-from ShasaBot import tbot, CMD_HELP, OWNER_ID
+from DeadlyBot import tbot, CMD_HELP, OWNER_ID
 import os, re, csv, json, time, uuid, pytz
 from datetime import datetime
-from ShasaBot.function import is_admin
+from DeadlyBot.function import is_admin
 from io import BytesIO
-import ShasaBot.modules.sql.feds_sql as sql
+import DeadlyBot.modules.sql.feds_sql as sql
 from telethon import *
 from telethon import Button
 from telethon.tl import *
 from telethon.tl.types import User
-from ShasaBot import *
+from DeadlyBot import *
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageMediaDocument, DocumentAttributeFilename
-from ShasaBot.events import register
+from DeadlyBot.events import register
 
 
 
@@ -257,7 +257,7 @@ async def p(event):
             
 
 """
-ShasaBot Features
+DeadlyBot Features
 """
 @tbot.on(events.CallbackQuery(pattern=r"fkfed(\_(.*))"))
 async def smex_fed(event):
