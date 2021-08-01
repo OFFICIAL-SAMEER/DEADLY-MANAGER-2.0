@@ -86,7 +86,7 @@ buttons = [
             text="🌹 𝙰𝙳𝙳 𝙳𝙴𝙰𝙳𝙻𝚈 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 🌹", url="t.me/DEADLY_manager_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="💞𝙸𝙽𝙵𝙾💞", callback_data="deadly_"),
+        InlineKeyboardButton(text="💞𝙸𝙽𝙵𝙾💞", callback_data="ShasaBot_"),
         InlineKeyboardButton(
             text="💖𝚂𝚄𝙿𝙿𝙾𝚁𝚃💖", url=f"https://t.me/DEADLY_manager_op"),                   
     ],
@@ -101,7 +101,7 @@ HELP_STRINGS = """
 `𝙸 𝙰𝙼 𝙷𝙴𝚁𝙴 𝚃𝙾 𝙼𝙰𝙽𝙰𝙶𝙴 𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙿𝙴𝚁𝙵𝙴𝙲𝚃𝙻𝚈..`"""
 
 
-deadly_IMG = "https://telegra.ph/file/52a4f3628ea7975119b5c.jpg"
+ShasaBot_IMG = "https://telegra.ph/file/52a4f3628ea7975119b5c.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](#) or by contacting @SAMEER_795 \
@@ -347,9 +347,9 @@ def help_button(update, context):
 
 
 @run_async
-def deadly_about_callback(update, context):
+def ShasaBot_about_callback(update, context):
     query = update.callback_query
-    if query.data == "deadly_":
+    if query.data == "ShasaBot_":
         query.message.edit_text(
             text="""ℹ️ 𝙷𝙸 𝙸 𝙰𝙼 𝙳𝙴𝙰𝙳𝙻𝚈 𝙱𝙾𝚃 ..𝙸 𝙲𝙰𝙽 𝙴𝙰𝚂𝙸𝙻𝚈 𝙼𝙰𝙽𝙰𝙶𝙴 𝚄𝚁 𝙶𝚁𝙾𝚄𝙿.
              ❍ 𝙸 𝙲𝙰𝙽 𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃 𝚄𝚂𝙴𝚁𝚂.
@@ -364,12 +364,12 @@ def deadly_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="deadly_back")
+                    InlineKeyboardButton(text="Back", callback_data="ShasaBot_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "deadly_back":
+    elif query.data == "ShasaBot_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -697,7 +697,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(deadly_about_callback, pattern=r"deadly_")
+    about_callback_handler = CallbackQueryHandler(ShasaBot_about_callback, pattern=r"ShasaBot_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
