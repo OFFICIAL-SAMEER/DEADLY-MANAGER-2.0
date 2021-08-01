@@ -88,13 +88,11 @@ buttons = [
     [
         InlineKeyboardButton(text="💞𝙸𝙽𝙵𝙾💞", callback_data="shasa_"),
         InlineKeyboardButton(
-            text="💖𝙲𝙷𝙰𝙽𝙽𝙴𝙻💖", url=f"https://t.me/DEADLY_manager_op"),
-        InlineKeyboardButton(
-            text="💖𝙶𝚁𝙿💖", url=f"https://t.me/DEADLY_manager"
+            text="💖𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝙽𝙽𝙴𝙻💖", url=f"https://t.me/DEADLY_manager_op"),
         ),                    
     ],
     [
-        InlineKeyboardButton(text="💝𝙷𝙴𝙻𝙿💝", callback_data="help_back"),
+        InlineKeyboardButton(text="💝𝙷𝙴𝙻𝙿💝", callback_data="help"),
     ],
 ]
 
@@ -719,7 +717,7 @@ def main():
 
     dispatcher.add_error_handler(error_callback)
             
-    if WEBHOOK:
+    if WEBHOOK:       
         LOGGER.info("Using webhooks.")
         updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TOKEN)
 
